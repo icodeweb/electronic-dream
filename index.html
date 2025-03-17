@@ -26,35 +26,39 @@
 			bottom: 0px;
 			left: 0px;
 			padding: 10px;
-			width: 100%;
-			max-height: 50px;
+			width: 100px;
 		}
 	</style>
 </head>
 
-<!-- <inline url='scene.x3d' /> -->
 
 <body>
 	<x3d PrimitiveQuality='Low' disableDoubleClick="true">
 		<scene>
-			<Viewpoint position='0 0 15' orientation='0 0 0 1'></Viewpoint>
-			<Shape>
-				<Appearance>
-					<MovieTexture url='tomorrow.mp4' loop="true" speed='1' repeatS="true" repeatT="true"></MovieTexture>
-				</Appearance>
-				<Box size='16 9 0.5'></Box>
-			</Shape>
+			<inline url='assets/scene.x3d' />
 		</scene>
 	</x3d>
-	<!-- <div id="messages"></div>
+
+	<div id="messages"></div>
 	<script>
 		let textbox = document.getElementById('messages');
 		let textStream = "";
-		function txtDisplay(message) {
-			textStream = message + '<br/>' + textStream;
+		function log(message) {
+			textStream = textStream + '<br/>' + message;
 			textbox.innerHTML = textStream;
 		}
-	</script> -->
+		function randoncolor(elemnt) {
+			let randomRvalue = Math.random()
+			let randomGvalue = Math.random()
+			let randomBvalue = Math.random()
+			elemnt.getElementsByTagName('Material')[0].setAttribute('diffuseColor', `${randomRvalue} ${randomGvalue} ${randomBvalue}`)
+		}
+
+		// setTimeout(() => {
+		// 	document.querySelector('[DEF="MA_Opaque(102_178_38)"]').setAttribute('diffuseColor', '0 1 0');
+		// }, 8000)
+
+	</script>
 
 </body>
 
