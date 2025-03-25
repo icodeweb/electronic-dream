@@ -1,6 +1,7 @@
 ## electronic-dream
 
 ![preview](assets/final.gif)
+
 I have always loved electronics. I enjoy creating electronic circuits, looking at components, and analyzing their designs. I could spend hours just observing them. What fascinated me the most was how their design is purely functional, rather than aesthetic. Over time, I began to appreciate the industrial beauty that emerges from this functionality.
 
 Take capacitors, for example. Their design is entirely practical—a metal canister (i guess aluminum) filled with liquid, with two leads extending from it. It’s a strange yet fascinating object, and it made me think about how other things could resemble it. A medicine bottle with pills inside, or any other kind of container. Even the polarity marking on a capacitor could be seen as a form of branding.
